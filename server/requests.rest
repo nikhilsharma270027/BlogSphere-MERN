@@ -1,0 +1,112 @@
+# "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MTZhZGNlNGE0YTU1NWMwNmFjZTkzOSIsImlhdCI6MTcxMjc2MjMxOH0.g4NJHo1rjwk5oHYOPscZ0ILYEuGYP0flNDzp8Q1TM9Q"
+
+# POST http://localhost:3000/signup
+# Content-Type: application/json
+
+# {
+#     "fullname" : "kKunaal",
+#     "email": "kKunaal4@ya.com",
+#     "password": "kKunaal1"
+# }
+
+# POST http://localhost:3000/create-blog
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MTZhZGNlNGE0YTU1NWMwNmFjZTkzOSIsImlhdCI6MTcxMjc2MjMxOH0.g4NJHo1rjwk5oHYOPscZ0ILYEuGYP0flNDzp8Q1TM9Q
+
+# {
+#     "title": "this is test blog",
+#     "banner": "https://example.com/image-url",
+#     "des": "this is ashort",
+#     "content": {
+#         "blocks": [1, 2]
+#     },
+#     "tags": [ "tags1, tags2" ],
+
+# }
+
+# {
+#     "title": "this is test blog",
+#     "banner": "https://example.com/image-url",
+#     "des": "this is a short description",
+#     "content": {
+#         "blocks": [
+#             {
+#                 "type": "text",
+#                 "text": "This is the content of the first block."
+#             },
+#             {
+#                 "type": "image",
+#                 "url": "https://example.com/image-url"
+#             }
+#         ]
+#     },
+#     "tags": [ "tag1", "tag2" ]
+# }
+
+# GET  http://localhost:3000/trending-blogs
+
+# POST  http://localhost:3000/search-blogs
+# Content-Type: application/json
+
+# {
+#     "tag": "cooking"
+# }
+
+# POST  http://localhost:3000/search-users
+# Content-Type: application/json
+
+# {
+#     "query": "nikhilsharma"
+# }
+
+# POST  http://localhost:3000/get-profile
+# Content-Type: application/json
+
+# {
+#     "username": "nikhilsharm"
+# }
+
+# POST  http://localhost:3000/get-blog
+# Content-Type: application/json
+
+# {
+#     "blog_id": "-t-i-t-l-e-6-aaSfLjQZL4B9einvxrY_F"
+# }
+
+# POST  http://localhost:3000/get-profile
+# Content-Type: application/json
+
+# {
+#     "username": "nikhilsharma"
+# }
+
+# POST  http://localhost:3000/change-password
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MDdlYjc1MGJkZDU2YzgyMjdkNWMzNyIsImlhdCI6MTcxNDc1NzQwNn0.-jEH_OPeTwaMjXbyiGus125rOGV0XE4I-N00PTVjbxA
+
+# {
+#     "currentPassword": "Nikhil27damn",
+#     "newPassword": "Nikhil27damn"
+# }
+
+# POST http://localhost:3000/user-written-blogs
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MDdlYjc1MGJkZDU2YzgyMjdkNWMzNyIsImlhdCI6MTcxNTA3MjA3OH0.7nY75nTxBXd01uGSlBUQtFTs3LTcT9HSGsam6FAfYkA
+# Content-Type: application/json
+
+# {
+    
+#     "page": 1,
+#     "draft": true
+# }
+
+# GET  http://localhost:3000/new-notification
+# Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MDdlYjc1MGJkZDU2YzgyMjdkNWMzNyIsImlhdCI6MTcxNDkwNzMyOH0.E8tmSMEdBfpMvcHbD6CjLeR3u_28HOS-cqBCwXAJOA0
+
+# {
+#     "fullname" : "kKunaal",
+#     "email": "kKunaal4@ya.com",
+#     "password": "kKunaal1"
+# }
+
+GET http://localhost:3000/get-upload-url

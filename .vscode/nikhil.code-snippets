@@ -1,0 +1,27 @@
+{
+    "RSJ2": {
+        "prefix": "rsj2",
+        "body": [
+            ".then(user => {",
+                "\treturn res.status(200).json()",
+            "})"
+        ],
+        "description": "Return status 200 with JSON response"
+    },
+    "RSJ5": {
+        "prefix": "rsj5",
+        "body": [
+            ".catch(err => {",
+                "\treturn res.status(500).json({ error: err.message })",
+            "})"
+        ],
+        "description": "Return status 500 with JSON response"
+    },
+    "CONLOG": {
+        "prefix": "conlog",
+        "body": [
+            "console.log();"
+        ],
+        "description": "Return status 500 with JSON response"
+    },
+}
