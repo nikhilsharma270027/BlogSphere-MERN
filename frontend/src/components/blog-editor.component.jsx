@@ -309,7 +309,7 @@ useEffect(() => {
                   ref={blogBannerRef}
                   src={defaultBanner} //change to banner imp!
                   // src={theme == "light" ? darkBanner : lightBanner} //change to banner imp!
-                  className="z-20 object-fill" //its will be over the input
+                  className="z-20 object-contain" //its will be over the input
                   onError={handleError}
                 />
                 <input
